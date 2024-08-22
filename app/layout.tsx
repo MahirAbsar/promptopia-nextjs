@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
+import Nav from "@/components/Nav";
+import Provider from "@/components/Provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +23,7 @@ export default function RootLayout({
           <div className="gradient"/>
         </div>
         <div className="app">
+          <Nav />
           {children}
         </div>
       </body>
